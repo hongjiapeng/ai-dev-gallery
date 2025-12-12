@@ -164,7 +164,7 @@
                         x:Name="WinMlModelOptionsButton"
                         Padding="0"
                         Visibility="Collapsed"
-                        AutomationProperties.Name="WinMl Model Options Button">
+                        AutomationProperties.Name="WinMl Model Options">
                         <Button.Flyout>
                             <Flyout
                                 x:Name="WinMLOptionsFlyout"
@@ -408,6 +408,8 @@
             x:Name="contentHost"
             Grid.Row="1"
             Margin="12,4,4,4"
+            MaxWidth="{Binding ActualWidth, ElementName=RootGrid}"
+            MaxHeight="{Binding ActualHeight, ElementName=RootGrid}"
             HorizontalAlignment="Stretch"
             Background="{ThemeResource CardGradient2Brush}"
             BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
